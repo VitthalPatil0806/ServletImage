@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+	id="WebApp_ID" version="6.0">
+	<display-name>Myimage</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<display-name>myactions</display-name>
+		<servlet-name>myactions</servlet-name>
+		<servlet-class>in.bitcode.Myactions</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myactions</servlet-name>
+		<url-pattern>/myactions</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>actionServlet</display-name>
+		<servlet-name>actionServlet</servlet-name>
+		<servlet-class>in.bitcode.actionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>actionServlet</servlet-name>
+		<url-pattern>/actionServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>lifecycle</display-name>
+		<servlet-name>lifecycle</servlet-name>
+		<servlet-class>lcycle.lifecycle</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>lifecycle</servlet-name>
+		<url-pattern>/vitthal</url-pattern>
+	</servlet-mapping>
+</web-app>
